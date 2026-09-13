@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: abb_irb140_description
+    relative_path: urdf/irb140.urdf
+  srdf:
+    relative_path: config/abb_irb140.srdf
+  package_settings:
+    author_name: ryan mckee
+    author_email: ryanmckee47@icloud.com
+    generated_timestamp: 1789314717
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
