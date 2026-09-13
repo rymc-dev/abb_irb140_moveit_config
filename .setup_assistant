@@ -1,7 +1,7 @@
 moveit_setup_assistant_config:
   urdf:
     package: abb_irb140_description
-    relative_path: urdf/irb140.urdf
+    relative_path: urdf/irb140.xacro
   srdf:
     relative_path: config/abb_irb140.srdf
   package_settings:
