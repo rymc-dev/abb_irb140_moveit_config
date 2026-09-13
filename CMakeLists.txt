@@ -14,3 +14,8 @@ endif()
 
 install(DIRECTORY config DESTINATION share/${PROJECT_NAME})
 install(FILES .setup_assistant DESTINATION share/${PROJECT_NAME})
+
+install(PROGRAMS
+  scripts/load_static_octomap.py
+  DESTINATION lib/${PROJECT_NAME}
+)
