@@ -18,6 +18,7 @@ moveit_simple_controller_manager:
       - joint_6
     action_ns: follow_joint_trajectory
     default: true
+
   gripper_controller:
     type: GripperCommand
     joints:

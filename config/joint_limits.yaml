@@ -11,90 +11,90 @@ joint_limits:
   joint_1:
     has_velocity_limits: true
     max_velocity: 2.6179999999999999
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true 
+    max_acceleration: 1.0
   joint_2:
     has_velocity_limits: true
     max_velocity: 2.6179999999999999
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true 
+    max_acceleration: 1.0
   joint_3:
     has_velocity_limits: true
     max_velocity: 2.6179999999999999
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true 
+    max_acceleration: 1.0
   joint_4:
     has_velocity_limits: true
     max_velocity: 6.2831999999999999
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true 
+    max_acceleration: 1.0
   joint_5:
     has_velocity_limits: true
     max_velocity: 6.2831999999999999
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true 
+    max_acceleration: 1.0
   joint_6:
     has_velocity_limits: true
     max_velocity: 7.8540000000000001
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_acceleration_limits: true 
+    max_acceleration: 1.0
   pneumatic_gripper_left_link_1_to_link_2:
     has_velocity_limits: true
-    max_velocity: 1
-    has_acceleration_limits: false
-    max_acceleration: 0
+    max_velocity: 1.0
+    has_acceleration_limits: true
+    max_acceleration: 1.0
   pneumatic_gripper_left_link_2_to_link_3:
     has_velocity_limits: true
-    max_velocity: 1
-    has_acceleration_limits: false
-    max_acceleration: 0
+    max_velocity: 1.0
+    has_acceleration_limits: true 
+    max_acceleration: 1.0
   pneumatic_gripper_left_link_3_to_link_4:
     has_velocity_limits: true
-    max_velocity: 1
-    has_acceleration_limits: false
-    max_acceleration: 0
+    max_velocity: 1.0
+    has_acceleration_limits: true 
+    max_acceleration: 1.0
   pneumatic_gripper_left_link_4_to_link_5:
     has_velocity_limits: true
-    max_velocity: 1
-    has_acceleration_limits: false
-    max_acceleration: 0
+    max_velocity: 1.0
+    has_acceleration_limits: true 
+    max_acceleration: 1.0
   pneumatic_gripper_left_link_5_to_link_6:
     has_velocity_limits: true
-    max_velocity: 1
-    has_acceleration_limits: false
-    max_acceleration: 0
+    max_velocity: 1.0
+    has_acceleration_limits: true 
+    max_acceleration: 1.0
   pneumatic_gripper_left_link_6_to_link_7:
     has_velocity_limits: true
-    max_velocity: 1
-    has_acceleration_limits: false
-    max_acceleration: 0
+    max_velocity: 1.0
+    has_acceleration_limits: true 
+    max_acceleration: 1.0
   pneumatic_gripper_right_link_1_to_link_2:
     has_velocity_limits: true
-    max_velocity: 1
-    has_acceleration_limits: false
-    max_acceleration: 0
+    max_velocity: 1.0
+    has_acceleration_limits: true 
+    max_acceleration: 1.0
   pneumatic_gripper_right_link_2_to_link_3:
     has_velocity_limits: true
-    max_velocity: 1
-    has_acceleration_limits: false
-    max_acceleration: 0
+    max_velocity: 1.0
+    has_acceleration_limits: true 
+    max_acceleration: 1.0
   pneumatic_gripper_right_link_3_to_link_4:
     has_velocity_limits: true
-    max_velocity: 1
-    has_acceleration_limits: false
-    max_acceleration: 0
+    max_velocity: 1.0
+    has_acceleration_limits: true 
+    max_acceleration: 1.0
   pneumatic_gripper_right_link_4_to_link_5:
     has_velocity_limits: true
-    max_velocity: 1
-    has_acceleration_limits: false
-    max_acceleration: 0
+    max_velocity: 1.0
+    has_acceleration_limits: true 
+    max_acceleration: 1.0
   pneumatic_gripper_right_link_5_to_link_6:
     has_velocity_limits: true
-    max_velocity: 1
-    has_acceleration_limits: false
-    max_acceleration: 0
+    max_velocity: 1.0
+    has_acceleration_limits: true 
+    max_acceleration: 1.0
   pneumatic_gripper_right_link_6_to_link_7:
-    has_velocity_limits: true
-    max_velocity: 1
-    has_acceleration_limits: false
-    max_acceleration: 0
+    has_velocity_limits: true 
+    max_velocity: 1.0
+    has_acceleration_limits: true 
+    max_acceleration: 1.0
