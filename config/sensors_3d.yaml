@@ -1,6 +1,10 @@
-sensors:
-  - default_sensor
-  - kinect_depthimage
+sensors: []
+# Disabled: default_sensor's PointCloudOctomapUpdater was live-building
+# move_group's octomap straight from the D405's /camera/depth/color/points,
+# independent of real_robot.launch.py's own use_octomap flag -- the D405's
+# depth noise was producing false occupied voxels in the planning scene.
+# kinect_depthimage was unused leftover template config (points at a
+# /head_mount_kinect topic nothing on this robot publishes).
 default_sensor:
   filtered_cloud_topic: filtered_cloud
   max_range: 5.0

@@ -37,6 +37,21 @@ def generate_launch_description():
         ),
     )
 
+    # This was previously hardcoded to True unconditionally, which silently
+    # ignored any use_sim_time:=false passed on the CLI. On the real robot
+    # (real_robot.launch.py) nothing publishes /clock -- no Gazebo, no
+    # controller_manager on that path -- so move_group's ROS clock stayed
+    # frozen at t=0, breaking trajectory execution's time-based bookkeeping
+    # (execution monitoring/timeouts) even though the FollowJointTrajectory
+    # action client/server still connected fine. Default stays True so the
+    # sim workflow (sim_robot.launch.py, which does publish /clock) is
+    # unaffected.
+    declare_use_sim_time = DeclareLaunchArgument(
+        'use_sim_time',
+        default_value='true',
+        description='Use simulation (Gazebo) clock. Set to false for the real robot.',
+    )
+
     # Move Group Node
     move_group_node = Node(
         package="moveit_ros_move_group",
@@ -46,7 +61,7 @@ def generate_launch_description():
             moveit_config.to_dict(),
             {"trajectory_execution.allowed_execution_duration_scaling": 2.0,},
             {"publish_robot_description_semantic": True},
-            {"use_sim_time": True},
+            {"use_sim_time": LaunchConfiguration('use_sim_time')},
         ],
     )
 
@@ -64,6 +79,7 @@ def generate_launch_description():
     return LaunchDescription([
         declare_load_octomap,
         declare_octomap_file,
+        declare_use_sim_time,
         move_group_node,
         static_octomap_loader_node,
     ])

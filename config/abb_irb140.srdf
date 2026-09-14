@@ -84,12 +84,15 @@
     <disable_collisions link1="link_3" link2="pneumatic_gripper_right_link_6" reason="Never"/>
     <disable_collisions link1="link_3" link2="pneumatic_gripper_right_link_7" reason="Never"/>
     <disable_collisions link1="link_4" link2="link_5" reason="Adjacent"/>
+    <disable_collisions link1="link_4" link2="pneumatic_gripper_base_link" reason="Never"/>
+    <disable_collisions link1="link_4" link2="pneumatic_gripper_left_link_1" reason="Never"/>
     <disable_collisions link1="link_4" link2="pneumatic_gripper_left_link_2" reason="Never"/>
     <disable_collisions link1="link_4" link2="pneumatic_gripper_left_link_3" reason="Never"/>
     <disable_collisions link1="link_4" link2="pneumatic_gripper_left_link_4" reason="Never"/>
     <disable_collisions link1="link_4" link2="pneumatic_gripper_left_link_5" reason="Never"/>
     <disable_collisions link1="link_4" link2="pneumatic_gripper_left_link_6" reason="Never"/>
     <disable_collisions link1="link_4" link2="pneumatic_gripper_left_link_7" reason="Never"/>
+    <disable_collisions link1="link_4" link2="pneumatic_gripper_right_link_1" reason="Never"/>
     <disable_collisions link1="link_4" link2="pneumatic_gripper_right_link_2" reason="Never"/>
     <disable_collisions link1="link_4" link2="pneumatic_gripper_right_link_3" reason="Never"/>
     <disable_collisions link1="link_4" link2="pneumatic_gripper_right_link_4" reason="Never"/>
