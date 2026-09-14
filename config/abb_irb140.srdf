@@ -210,6 +210,7 @@
     <disable_collisions link1="pneumatic_gripper_left_link_7" link2="pneumatic_gripper_right_link_4" reason="Never"/>
     <disable_collisions link1="pneumatic_gripper_left_link_7" link2="pneumatic_gripper_right_link_5" reason="Never"/>
     <disable_collisions link1="pneumatic_gripper_left_link_7" link2="pneumatic_gripper_right_link_6" reason="Never"/>
+    <disable_collisions link1="pneumatic_gripper_left_link_7" link2="pneumatic_gripper_right_link_7" reason="Never"/>
     <disable_collisions link1="pneumatic_gripper_right_link_1" link2="pneumatic_gripper_right_link_2" reason="Adjacent"/>
     <disable_collisions link1="pneumatic_gripper_right_link_1" link2="pneumatic_gripper_right_link_3" reason="Never"/>
     <disable_collisions link1="pneumatic_gripper_right_link_1" link2="pneumatic_gripper_right_link_4" reason="Never"/>
