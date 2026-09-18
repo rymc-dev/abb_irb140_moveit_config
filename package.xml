@@ -4,7 +4,7 @@
   <name>abb_irb140_moveit_config</name>
   <version>0.3.0</version>
   <description>
-     An automatically generated package with all the configuration and launch files for using the abb_irb140 with the MoveIt Motion Planning Framework
+    MoveIt 2 configuration for the ABB IRB140 6-DOF arm with a pneumatic gripper: planning groups, named poses, KDL kinematics, ros2_control controllers, and launch files for move_group, RViz and mock-hardware demos.
   </description>
   <maintainer email="ryanmckee47@icloud.com">ryan mckee</maintainer>
 
