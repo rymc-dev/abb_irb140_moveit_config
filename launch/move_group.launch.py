@@ -60,6 +60,18 @@ def generate_launch_description():
         parameters=[
             moveit_config.to_dict(),
             {"trajectory_execution.allowed_execution_duration_scaling": 2.0,},
+            # Perception-driven Cartesian-pose plans (abb_irb140_motion_control's
+            # ball_pick_and_place_node) were seeing "Invalid Trajectory: start
+            # point deviates from current robot state more than 0.01 at joint
+            # 'joint_1'" on the very first arm move after a gripper move, even
+            # with the robot fully at rest -- reproducible every time, in this
+            # sim, which also shows pervasive TF_OLD_DATA warnings (a clock-sync
+            # looseness between gz_ros2_control and move_group's planning scene
+            # monitor -- see the use_sim_time comment above for a related, if
+            # not identical, timing issue in this same launch file). Loosened
+            # from the 0.01 rad default as a pragmatic fix; revisit if the
+            # underlying clock-sync issue is ever root-caused.
+            {"trajectory_execution.allowed_start_tolerance": 0.5},
             {"publish_robot_description_semantic": True},
             {"use_sim_time": LaunchConfiguration('use_sim_time')},
         ],
